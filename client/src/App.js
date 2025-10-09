@@ -294,6 +294,15 @@ function App() {
           </div>
         )}
       </main>
+
+      {/* Modal for creating/editing notes */}
+      {showModal && (
+        <NoteModal
+          note={editingNote}
+          onSubmit={handleSubmit}
+          onClose={closeModal}
+        />
+      )}
     </div>
   );
 }

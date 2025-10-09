@@ -41,14 +41,14 @@ const NoteList = ({ notes, onEdit, onDelete }) => {
                 onClick={() => onEdit(note)}
                 title="Edit note"
               >
-                ✏️
+                Edit
               </button>
               <button 
                 className="btn btn-sm btn-danger"
                 onClick={() => onDelete(note.id)}
                 title="Delete note"
               >
-                🗑️
+                Delete
               </button>
             </div>
           </div>
